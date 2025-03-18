@@ -19,9 +19,12 @@ const upload = multer({ dest: "./upload/" });
 
 // Custom route for image upload
 server.post("/upload", upload.single("image"), (req, res) => {
-  if (!req.files) {
+  if (!req.file) {
     return res.status(400).send("No file uploaded or invalid file type.");
   }
+  //   if (!req.files) {
+  //     return res.status(400).send("No file uploaded or invalid file type.");
+  //   }
   res.send("Image(s) uploaded successfully.");
 });
 
