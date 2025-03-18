@@ -7,15 +7,15 @@ const middlewares = jsonServer.defaults();
 const port = process.env.PORT || 3200;
 
 // Set up multer for image upload
-// const storage = multer.diskStorage({
-//   destination: (req, file, cb) => {
-//     cb(null, "upload");
-//   },
-//   filename: (req, file, cb) => {
-//     cb(null, `${Date.now()}-${file.originalname}`);
-//   },
-// });
-const upload = multer({ dest: "./upload/" });
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, "./upload/");
+  },
+  filename: (req, file, cb) => {
+    cb(null, `${Date.now()}-${file.originalname}`);
+  },
+});
+const upload = multer({ storage: storage });
 
 // Custom route for image upload
 server.post("/upload", upload.single("image"), (req, res) => {
@@ -25,7 +25,7 @@ server.post("/upload", upload.single("image"), (req, res) => {
   //   if (!req.files) {
   //     return res.status(400).send("No file uploaded or invalid file type.");
   //   }
-  res.send("Image(s) uploaded successfully.");
+  res.send(JSON.stringify(req.file));
 });
 
 server.use(middlewares);
