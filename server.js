@@ -28,9 +28,9 @@ server.post("/upload", upload.single("image"), (req, res) => {
   //     return res.status(400).send("No file uploaded or invalid file type.");
   //   }
   res.type("text/html");
-  res.send(
-    `<img src="https://bramble-well-quality.glitch.me/${req.file.path}" />`
-  );
+  res.json({
+    path: req.file.path,
+  });
 });
 
 server.use(middlewares);

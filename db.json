@@ -6,7 +6,12 @@
       "completed": true,
       "category": "1",
       "description": "Study the basics of React framework",
-      "added": "2025-02-25T04:23:27.294008"
+      "added": "2025-02-25T04:23:27.294008",
+      "image": "",
+      "location": {
+        "longitude": 12.4567,
+        "latitude": 43.2134
+      }
     },
     {
       "id": "2",
@@ -14,7 +19,12 @@
       "completed": false,
       "category": "1",
       "description": "Develop a simple todo application using React",
-      "added": "2025-03-10T11:53:27.294008"
+      "added": "2025-03-10T11:53:27.294008",
+      "image": "",
+      "location": {
+        "longitude": 23.4567,
+        "latitude": 45.2134
+      }
     },
     {
       "id": "4",
@@ -22,7 +32,12 @@
       "completed": true,
       "category": "4",
       "description": "Finish reading the current novel",
-      "added": "2025-02-18T17:00:27.294008"
+      "added": "2025-02-18T17:00:27.294008",
+      "image": "",
+      "location": {
+        "longitude": 56.4567,
+        "latitude": 67.2134
+      }
     },
     {
       "id": "5",
@@ -30,7 +45,12 @@
       "completed": true,
       "category": "3",
       "description": "Purchase weekly groceries from the local store",
-      "added": "2025-03-11T04:07:27.294008"
+      "added": "2025-03-11T04:07:27.294008",
+      "image": "",
+      "location": {
+        "longitude": 0,
+        "latitude": 0
+      }
     },
     {
       "id": "6",
@@ -38,7 +58,12 @@
       "completed": true,
       "category": "1",
       "description": "Create slides for the upcoming client meeting",
-      "added": "2025-02-17T15:19:27.294008"
+      "added": "2025-02-17T15:19:27.294008",
+      "image": "",
+      "location": {
+        "longitude": 89.4567,
+        "latitude": 78.2134
+      }
     },
     {
       "id": "7",
@@ -46,7 +71,12 @@
       "completed": true,
       "category": "1",
       "description": "Go over the project timeline and ensure deadlines are met",
-      "added": "2025-03-10T14:26:27.294008"
+      "added": "2025-03-10T14:26:27.294008",
+      "image": "",
+      "location": {
+        "longitude": 34.4567,
+        "latitude": 56.2134
+      }
     },
     {
       "id": "8",
@@ -54,7 +84,12 @@
       "completed": false,
       "category": "1",
       "description": "Add recent changes to the project documentation",
-      "added": "2025-02-16T05:02:27.294008"
+      "added": "2025-02-16T05:02:27.294008",
+      "image": "",
+      "location": {
+        "longitude": 0,
+        "latitude": 0
+      }
     },
     {
       "id": "9",
@@ -62,7 +97,12 @@
       "completed": true,
       "category": "1",
       "description": "Resolve the issue causing login failures",
-      "added": "2025-02-28T14:55:27.294008"
+      "added": "2025-02-28T14:55:27.294008",
+      "image": "",
+      "location": {
+        "longitude": 67.4567,
+        "latitude": 89.2134
+      }
     },
     {
       "id": "10",
@@ -70,7 +110,12 @@
       "completed": false,
       "category": "1",
       "description": "Participate in the daily team standup meeting",
-      "added": "2025-02-20T06:43:27.294008"
+      "added": "2025-02-20T06:43:27.294008",
+      "image": "",
+      "location": {
+        "longitude": 0,
+        "latitude": 0
+      }
     },
     {
       "id": "18",
@@ -78,7 +123,12 @@
       "completed": true,
       "category": "2",
       "description": "Have a phone call with mom to catch up",
-      "added": "2025-03-14T04:52:27.294008"
+      "added": "2025-03-14T04:52:27.294008",
+      "image": "",
+      "location": {
+        "longitude": 23.4567,
+        "latitude": 45.2134
+      }
     },
     {
       "id": "39",
@@ -86,7 +136,12 @@
       "completed": false,
       "category": "4",
       "description": "Perform a home workout for 30 minutes",
-      "added": "2025-02-21T04:12:27.294008"
+      "added": "2025-02-21T04:12:27.294008",
+      "image": "",
+      "location": {
+        "longitude": 56.4567,
+        "latitude": 67.2134
+      }
     },
     {
       "id": "40",
@@ -94,7 +149,12 @@
       "completed": true,
       "category": "4",
       "description": "Ensure daily water intake goal is met",
-      "added": "2025-02-17T21:32:27.294008"
+      "added": "2025-02-17T21:32:27.294008",
+      "image": "",
+      "location": {
+        "longitude": 0,
+        "latitude": 0
+      }
     },
     {
       "id": "47",
@@ -102,7 +162,12 @@
       "completed": false,
       "category": "5",
       "description": "Finish the current module of the online course",
-      "added": "2025-03-15T11:45:27.294008"
+      "added": "2025-03-15T11:45:27.294008",
+      "image": "",
+      "location": {
+        "longitude": 89.4567,
+        "latitude": 78.2134
+      }
     },
     {
       "id": "48",
@@ -110,7 +175,12 @@
       "completed": true,
       "category": "5",
       "description": "Read a chapter from a technical book for knowledge gain....",
-      "added": "2025-03-11T04:41:27.294008"
+      "added": "2025-03-11T04:41:27.294008",
+      "image": "",
+      "location": {
+        "longitude": 34.4567,
+        "latitude": 56.2134
+      }
     },
     {
       "text": "some new item",
@@ -118,7 +188,12 @@
       "category": "1",
       "description": "",
       "id": "HUht8Kc",
-      "added": "2025-03-14T02:33:27.294008"
+      "added": "2025-03-14T02:33:27.294008",
+      "image": "",
+      "location": {
+        "longitude": 12.4567,
+        "latitude": 43.2134
+      }
     }
   ],
   "categories": [
