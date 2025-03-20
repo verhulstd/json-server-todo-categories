@@ -24,10 +24,8 @@ server.post("/upload", upload.single("image"), (req, res) => {
   if (!req.file) {
     return res.status(400).send("No file uploaded or invalid file type.");
   }
-  //   if (!req.files) {
-  //     return res.status(400).send("No file uploaded or invalid file type.");
-  //   }
-  res.type("text/html");
+  res.type("application/json");
+  res.status(200);
   res.json({
     path: req.file.path,
   });
