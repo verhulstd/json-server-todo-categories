@@ -45,7 +45,7 @@ server.post("/upload", upload.single("image"), (req, res) => {
       .json({ error: "No file uploaded or invalid file type." });
   }
   res.status(200).json({
-    path: `/files/${req.file.filename}`, // Ensure correct URL path
+    path: `https://syntra-json-server-todo-categorie.glitch.me/${req.file.filename}`, // Ensure correct URL path
   });
 });
 
