@@ -2,6 +2,7 @@ const jsonServer = require("json-server");
 const multer = require("multer");
 const express = require("express");
 const path = require("path");
+const cors = require("cors");
 const server = jsonServer.create();
 const router = jsonServer.router("db.json");
 const middlewares = jsonServer.defaults();
@@ -9,15 +10,16 @@ const port = process.env.PORT || 3200;
 
 // Add JSON and URL-encoded parsers
 server.use(express.json());
+server.use(cors());
 server.use(express.urlencoded({ extended: true }));
 
 // Serve uploaded files
-server.use("/uploads", express.static(path.join(__dirname, "upload")));
+server.use(express.static(path.join(__dirname, "files")));
 
 // Multer storage with file type validation
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
-    cb(null, "./upload/");
+    cb(null, "./files/");
   },
   filename: (req, file, cb) => {
     cb(null, `${Date.now()}-${file.originalname}`);
@@ -43,7 +45,7 @@ server.post("/upload", upload.single("image"), (req, res) => {
       .json({ error: "No file uploaded or invalid file type." });
   }
   res.status(200).json({
-    path: `/uploads/${req.file.filename}`, // Ensure correct URL path
+    path: `/files/${req.file.filename}`, // Ensure correct URL path
   });
 });
 
